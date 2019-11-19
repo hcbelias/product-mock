@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "debug": "set DEBUG=product-mock:* && node ./bin/www",
+    "debug-win": "node inspect ./bin/www",
+    "debug-server": "set NODE_ENV=development && set DEBUG=myapp:* && npm run debug",
     "port-debug": "netstat -ano | findstr :9229",
     "kill-debug": "taskkill /F /PID"
   },
